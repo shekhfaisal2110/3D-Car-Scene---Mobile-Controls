@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Make viewport responsive and prevent scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>3D Car Scene - Mobile Controls</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">Loading...</div>
+    <div id="container"></div>
+
+    <!-- UI Elements -->
+    <div id="ui-container">
+        <div id="score">Score: 0</div>
+    </div>
+    <div id="game-rules">
+        <div class="rules-header">
+          <strong>🚗 Game Controls</strong>
+          <button id="toggle-rules">Hide</button>
+        </div>
+        <ul>
+          <li><kbd>←</kbd> or <kbd>A</kbd>: Move Right</li>
+          <li><kbd>→</kbd> or <kbd>D</kbd>: Move Left</li>
+        </ul>
+      </div>
+      
+    <div id="game-over">GAME OVER!</div>
+
+    <!-- Mobile Control Buttons -->
+    <div id="left-button" class="control-button">◀</div> 
+    <div id="right-button" class="control-button">▶</div> 
+
+
+    <script src="script.js"></script>
+    <!-- Import Maps -->
+     <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.164.1/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.164.1/examples/jsm/"
+            }
+        }
+    </script>
+    
+    <script src="module.js" type="module"></script>
+</body>
+</html>
